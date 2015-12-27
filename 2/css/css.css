@@ -1,0 +1,77 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+    font-family: 'Microsoft Yahei', Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+html,body,.outer{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.outer{
+    position: relative;
+
+}
+.inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0s inner;
+}
+.inner div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.inner div:nth-child(1){
+    background: url("../img/bg1.jpg" no-repat);
+    -webkit-background-size:100%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+.inner div:nth-child(1){
+    background: url("../img/bg2.jpg" no-repat);
+    -webkit-background-size:100%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+.inner div:nth-child(3){
+    background: url("../img/bg1.jpg" no-repat);
+    -webkit-background-size:100%;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+
+}
+.tip{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left:-10px;
+    width: 0;
+    border: 10px solid red;
+    border-color: transparent transparent red transparent;
+    -webkit-animation: tipMove 1.5s easy-in-out;
+}
+
+@-webkit-keyframes tipMove {
+    0%,100%{
+        opacity: 1;
+        bottom: 10px;
+    }
+    50%{
+        opacity: 0;
+        bottom: 20px;
+    }
+}

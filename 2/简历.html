@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<div class="outer">
+    <div class="inner" style="top:0">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+
+
+<div class="tip"></div>
+</body>
+<script src="js/touch.js.js"></script>
+<script src="js/js.js"></script>
+</html>
+<!--
+移动端优化法则：尽量减少请求次数
+1)css和js文件需要外链式引入的时候需要保持一个资源文件。
+css和js进行合并
+如果引入调用好几次AJAX读取数据，开始加载页面的时候，我们只请求第一屏的数据内容，等待页面加载完成后，我们再请求其余的
+数据异步加载。 同理，还有图片的延迟加载，使用base64处理大图，css sprite
+-->

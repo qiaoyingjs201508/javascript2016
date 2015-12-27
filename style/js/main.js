@@ -1,5 +1,6 @@
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 document.addEventListener('touchend', function (e) { e.preventDefault(); }, false);
+console.log("");
 var fadeTime=500;
 var mainWidth=$(window).width();
 var mainHeight=$(window).height();
@@ -180,7 +181,7 @@ function lshow(start,end){
 			lshow(start+1,end)
 		},msgTime)
 	}
-	console.log(la);
+
 	la++;
 	myScroll1.refresh();
 	myScroll1.scrollToElement(document.querySelector('.scroller1 .ls:nth-child('+la+')'));
